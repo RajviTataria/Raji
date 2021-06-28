@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="./static/LOGO.ico" type="imasge/gif" sizes="20x20">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card Python Coding</title>
+<style>
+    body{
+        margin: 0;
+        text-align: center;
+        font-family: 'Mate SC', serif;
+    }
+    .head{
+        text-decoration: underline;
+    }
+    .quiz{
+        text-align: left;
+        font-size: large;
+    }
+</style>
+</head>
+<body background="./static/Untitled design (1).jpg">
+    <div class="head">
+        <h1>Python Coding for making a Report Card</h1>
+    </div>
+    <br>
+    <div class='quiz'>
+<p>grno=int(input("Enter GR.no:"))<br>
+name=input("Enter Name:")<br>
+
+#Information on marks in exam<br>
+num_sub=int(input("Enter the number of subjects:"))<br>
+eng=float(input("Enter English marks:"))<br>
+hindi=float(input("Enter Hindi marks:"))<br>
+math=float(input("Enter Math marks:"))<br>
+sci=float(input("Enter Science Marks:"))<br>
+ssc=float(input("Enter Social science marks:"))<br>
+<br>
+<br>
+total=eng+math+sci+ssc+hindi<br>
+average=total/num_sub<br>
+percentage=total/100<br>
+percentage_1=percentage*100<br>
+<br>
+print("*************************************************")<br>
+print("          STUDENT REPORT CARD     ") <br>
+print("*************************************************")<br>
+print("Student Name", name)<br>
+print("Student GR.no:", grno)<br>
+print("*************************************************")<br>
+print("Total marks:", total)<br>
+print("*************************************************")<br>
+print("Average is:", average)<br>
+print("*************************************************")<br>
+print("Percentage:",percentage_1)</p>
+
+    </div>
+</body>
+</html>

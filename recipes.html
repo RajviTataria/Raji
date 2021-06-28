@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link rel="icon" href="./static/LOGO.ico" type="imasge/gif" sizes="20x20">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <style>
+    body{
+        margin: 0;
+        text-align: center;
+        font-family: 'Mate SC', serif;
+    }
+    ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #333;
+    }
+
+    li {
+       float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        /* .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        } */
+
+        .quiz{
+            text-decoration: underline;
+        }
+
+        .grid-container{
+          display: inline-grid;
+          grid-template-columns:  250px 250px 250px 250px;
+          grid-gap: 100px;
+          
+        }
+        .quiz{
+          text-decoration: underline;
+        }
+
+        .grid-item{
+          border: 1px solid black;
+          padding: 5px;
+          text-align: center;
+        }
+        .grid-container div{
+          border:1px solid black;
+          padding:10px;
+        }
+        .head{
+          text-decoration: underline;
+        }
+        .grid-item1{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+        .grid-item2{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+        .grid-item3{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+        .grid-item4{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+        .grid-item5{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+        .grid-item6{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+
+        .btn-5 {
+
+padding: 10px 25px;
+
+margin-top: 20px;
+
+color: rgb(0, 0, 0);
+
+font-family: 'Mate SC', serif;
+
+font-weight: 500;
+
+font-size: small;
+
+background: transparent;
+
+outline: none !important;
+
+cursor: pointer;
+
+transition: all 0.3s ease;
+
+position: relative;
+
+display: inline-block;
+
+}
+
+ 
+
+.btn-5 {
+
+width: 130px;
+
+height: 40px;
+
+line-height: 42px;
+
+padding: 0;
+
+border: none;
+
+}
+
+.btn-5 span {
+
+position: relative;
+
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+}
+
+.btn-5:before,
+
+.btn-5:after {
+
+position: absolute;
+
+content: "";
+
+right: 0;
+
+top: 0;
+
+background: rgb(0, 0, 0);
+
+transition: all 0.3s ease;
+
+}
+
+.btn-5:before {
+
+height: 50%;
+
+width: 2px;
+
+}
+
+.btn-5:after {
+
+width: 20%;
+
+height: 2px;
+
+}
+
+.btn-5:hover:before {
+
+height: 100%;
+
+}
+
+.btn-5:hover:after {
+
+width: 100%;
+
+}
+
+.btn-5 span:before,
+
+.btn-5 span:after {
+
+position: absolute;
+
+content: "";
+
+left: 0;
+
+bottom: 0;
+
+background: rgb(0, 0, 0);
+
+transition: all 0.3s ease;
+
+}
+
+.btn-5 span:before {
+
+width: 2px;
+
+height: 50%;
+
+}
+
+.btn-5 span:after {
+
+width: 20%;
+
+height: 2px;
+
+}
+
+.btn-5 span:hover:before {
+
+height: 100%;
+
+}
+
+.btn-5 span:hover:after {
+
+width: 100%;
+
+}
+.btn{
+  text-decoration: none;
+}
+
+        .Project{
+            text-decoration: underline;
+        }
+
+        .grid-container2{
+          display: inline-grid;
+          grid-template-columns:  250px 250px 250px 250px;
+          grid-gap: 100px;
+          
+        }
+
+        .grid-item{
+          border: 1px solid black;
+          padding: 5px;
+          text-align: center;
+        }
+        .grid-container2 div{
+          border:1px solid black;
+          padding:10px;
+        }
+
+        .recipe{
+          text-decoration: underline;
+        }
+        .grid-item1{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+
+        .grid-item2{
+          box-shadow: 2px 2px 0px 2px lightslategray;
+        }
+
+  </style>
+</head>
+<body background="./static/Untitled design (1).jpg">
+  <nav>
+    <ul>
+      <a href="logo.html">
+        <img src=".\static\LOGO.ico" height="48px" width="48px" align="left">
+        </a>
+        <div class="topnav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./register.html">Register</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li><a href="./projects.html">Projects and Quizzes</a></li>
+          </div>
+    </ul>
+</nav>
+<div class=recipe>
+<P><h1>Recipes:</h1></P>
+</div>
+<p>Over here you will be able to find many recipes which are 100% vegetratian/vegan.</p>
+<br><br>
+
+<div class="grid-container">
+  <div class="grid-item1">
+    <a href="./chocochipcookies.html">
+      <img src=".\static\download (4).jpg" alt="cookies"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./chocochipcookies.html" class=btn>Chocochip Cookies</a></span></button>
+      
+      
+  </div>
+
+  <div class="grid-item2">
+    <a href="./sorbet.html">
+      <img src=".\static\sorbet.jpg" alt="sorbet"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./sorbet.html" class=btn>Fruit Sorbet</a></span></button>
+      
+  </div>
+  <div class="grid-item3">
+    <a href="./hotchocolate.html">
+      <img src=".\static\download (14).jpg" alt="hotchocolate"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./hotchocolate.html" class=btn>Hot Chocolate</a></span></button>
+      
+  </div>
+
+  <div class="grid-item4">
+    <a href="./shrikhand.html">
+      <img src=".\static\download (11).jpg" alt="shrikhand"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./shrikhand.html" class=btn>Shrikhand</a></span></button>
+      
+  </div>
+  
+  <div class="grid-item5">
+    <a href="./bhurji.html">
+      <img src=".\static\download (10).jpg" alt="bhurji"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./bhurji.html" class=btn>Paneer Bhurji</a></span></button>
+      
+  </div>  
+
+  <div class="grid-item6">
+    <a href="./dalkhichdi.html">
+      <img src=".\static\download (13).jpg" alt="Khichdi"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./dalkhichdi.html" class=btn>Dal Khichdi</a></span></button>
+      
+  </div>  
+  <div class="grid-item7">
+    <a href="./manchurian.html">
+      <img src=".\static\download (6).jpg" alt="manchurian"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./manchurian.html" class=btn>Manchurian</a></span></button>
+      
+  </div>
+  
+  <div class="grid-item8">
+    <a href="./manchowsoup.html">
+      <img src=".\static\images (3).jpg" alt="manchowsoup"
+      width="150px" height="150px">
+      </a>
+      <br> 
+      <button class="btn-5"><span><a href="./manchowsoup.html" class=btn>Manchow Soup</a></span></button>
+      
+  </div>
+  
+</div>
+<br><br>
+</body>
+</html>

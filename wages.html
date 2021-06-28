@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="./static/LOGO.ico" type="imasge/gif" sizes="20x20">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Wage Calculation Python Coding</title>
+<style>
+    body{
+        margin: 0;
+        text-align: center;
+        font-family: 'Mate SC', serif;
+    }
+    .head{
+        text-decoration: underline;
+    }
+    .quiz{
+        text-align: left;
+        font-size: large;
+    }
+</style>
+</head>
+<body background="./static/Untitled design (1).jpg">
+    <div class="head">
+        <h1>Python Coding for Daily Wages Calculation</h1>
+    </div>
+    <br>
+    <div class='quiz'>
+
+<p>
+# wage calculation<br>
+days=float(input("Enter the number of days present:"))<br>
+wages=float(input("Enter wages per Day:")) <br>
+basic=wages*days; <br>
+HRA=basic*(10/100); <br>
+DA=basic*0.05; <br>
+PF=basic*0.12; <br>
+netsalary=basic+HRA+DA-PF; <br>
+print("\nBasic:%lf \nHRA:%f \nDA:%f \nPF:%f \nNet Salary:%f" %(basic,HRA,DA,PF,netsalary));
+</p>
+
+    </div>
+</body>
+</html>

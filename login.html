@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="./static/LOGO.ico" type="imasge/gif" sizes="20x20">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body{
+        
+        text-align: center;
+        margin: 0;
+        font-family: 'Mate SC', serif;
+    }
+    ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color: #333;
+    }
+
+    li {
+       float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 24px 26px;
+        text-decoration: none;
+    }
+    .topnav {
+          overflow: hidden;
+          background-color: #333;
+          /* border-radius: 12px; */
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+    
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        /* .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        } */
+        
+        .a{
+        background-color: lightgray;
+        /* text-emphasis-color: white; */
+        padding: 25px 50px;
+        text-align: center;
+        /* text-decoration: none; */
+        display: inline-block;
+    }
+    .ar{
+        background-color: lightgray;
+        /* text-emphasis-color: white; */
+        padding: 25px 50px;
+        text-align: center;
+        /* text-decoration: none; */
+        display: inline-block;
+    }
+    .a{
+        text-decoration: none;
+        border-radius: 50px;
+    }
+    a.a{
+        text-decoration: none;
+    }
+    .ar{
+        text-decoration: none;
+        border-radius: 50px;
+    }
+    a,ar{
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body background="./static/Untitled design (1).jpg" >
+    <nav>
+        <ul>
+          <a href="logo.html">
+          <img src=".\static\LOGO.ico" height="48px" width="48px" align="left">
+          </a>
+            <div class="topnav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./aboutme.html">About Me</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./recipes.html">Recipes</a></li>
+                <li><a href="./projects.html">Projects and Quizzes</a></li>
+              </div>
+            
+        </ul>
+    </nav>
+    <div class= login>
+    <h1>Login Here!!</h1>
+    <br><br><br>
+    <h3>Please fill in the details below to Login to our Website.</h3>
+    <form>
+        <label for="email">Email address:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="uname">User name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="uname" name="uname"><br><br>
+        <label for="lname">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="pass" name="pass"><br><br>
+
+    </form>
+    </div>
+    <div class=a>
+        <a href=./succesfullogin.html>Login!</a>
+    </div>
+        
+    </form>
+    <h2>Not Registered Yet? Register here for Free</h2>
+    <div class=ar>
+        <a href=./register.html>Register Now!</a>
+    </div>
+</body>
+</html>
